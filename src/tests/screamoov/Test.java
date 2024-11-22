@@ -13,7 +13,7 @@ public class Test {
         try {
             long value = Long.parseLong(str);
             for (Sizes size : Sizes.values()) {
-                System.out.println(size.name() + ": " + SizeUtil.getBits(size, value) + " bits");
+                System.out.println(value + size.name() + ": " + SizeUtil.getBits(size, value) + " bits");
             }
         } catch (NumberFormatException e) {
             System.out.println("Invalid input");
